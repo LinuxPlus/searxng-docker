@@ -4,8 +4,8 @@ services:
   caddy:
     container_name: caddy
     image: docker.io/library/caddy:2-alpine
-    ports:
-      - "8030:8088"
+    #ports:
+    #  - "8030:8088"
     restart: unless-stopped
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile:ro
