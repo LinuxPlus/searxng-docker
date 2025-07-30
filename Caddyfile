@@ -40,6 +40,7 @@
 		header @static Cache-Control "public, max-age=30, stale-while-revalidate=60"
 		header @imageproxy Cache-Control "public, max-age=3600"
 	}
-
+        :8088 {
 	reverse_proxy searxng:8080
+        }
 }
