@@ -1,6 +1,5 @@
 :8088 {
-
-	encode zstd gzip
+	admin off
 
 	log {
 		output stderr
@@ -22,6 +21,8 @@
 		trusted_proxies static private_ranges
 		trusted_proxies_strict
 	}
+
+	encode zstd gzip
 
 	@api {
 		path /config
