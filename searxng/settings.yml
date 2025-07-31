@@ -7,3 +7,8 @@ server:
   image_proxy: true
 redis:
   url: redis://redis:6379/0
+# ↓↓↓  ADD THIS Babak ↓↓↓
+search:
+  formats:
+    - html
+    - json
