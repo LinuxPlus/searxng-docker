@@ -26,9 +26,10 @@ services:
       - "0.0.0.0:8030:8080"
     volumes:
       - ./searxng:/etc/searxng:rw
+      - ./searxng/settings_override.yml:/etc/searxng/settings_override.yml:ro
       - searxng-data:/var/cache/searxng:rw
     environment:
-      - SEARXNG_BASE_URL=http://localhost:8030/
+      - SEARXNG_BASE_URL=http://search.heyboddy.ir:8030/
     logging:
       driver: "json-file"
       options:
