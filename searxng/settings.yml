@@ -12,3 +12,6 @@ search:
   formats:
     - html
     - json
+# لازم است تا 403 را از بین ببرد
+limiter:
+  enabled: false
